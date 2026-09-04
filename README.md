@@ -30,11 +30,12 @@ python3 -m http.server 8080
  
 ### 2. Run the Port Scanner
 In a new terminal window, execute the scanner script:
-
+```bash
 python3 port_scanner.py
+```
 
-
-📊 Sample Output
+## 📊 Sample Output
+```
 --- V2.0 Banner Scan: 127.0.0.1 ---
 [-] Port 21   : KAPALI
 [-] Port 22   : KAPALI
