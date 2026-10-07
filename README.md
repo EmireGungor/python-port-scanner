@@ -53,3 +53,26 @@ python3 port_scanner.py -t 127.0.0.1 -p 1-8100
 ---
 
 ## 📊 Sample Output
+
+--- V2.0 Banner Scan: 127.0.0.1 ---
+[-] Port 21 : KAPALI
+[-] Port 22 : KAPALI
+[-] Port 80 : KAPALI
+[-] Port 443 : KAPALI
+[+] Port 8080 : ACIK --> Banner: HTTP/1.0 200 OK
+
+
+---
+
+## 📁 Project Structure
+
+python-port-scanner/
+├── port_scanner.py # Main scanner script: argument parsing, scanning, banner grabbing
+└── README.md # Project documentation
+
+
+---
+
+## 👤 Author
+
+GitHub: [@EmireGungor](https://github.com/EmireGungor)
