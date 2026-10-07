@@ -1,7 +1,19 @@
 import socket
+import argparse
 
-target_ip = "127.0.0.1"
-ports = [21, 22, 80, 443, 8080]
+def parse_ports(port_str):
+    parts = port_str.split("-")
+    ports = []
+    for i in range(int(parts[0]), int(parts[1])+1):
+	    ports.append(i)
+    return ports
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-t", "--target",  required=True)
+parser.add_argument("-p", "--ports",  default="1-1024")
+args = parser.parse_args()
+target_ip =args.target
+ports = parse_ports(args.ports)
 
 print(f"--- V2.0 Banner Scan: {target_ip} ---")
 
