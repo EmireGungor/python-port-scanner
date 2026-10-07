@@ -77,6 +77,6 @@ python-port-scanner/
 ---
 
 ## 👤 Author
-```bash
+
 GitHub: [@EmireGungor](https://github.com/EmireGungor)
-```
+
